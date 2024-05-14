@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nusanl/screen/canvas_drawing_page.dart';
-
+import 'package:nusanl/views/about_screen.dart';
 void main() {
   runApp(const NusaNL());
 }
@@ -16,7 +15,7 @@ class NusaNL extends StatelessWidget {
         useMaterial3: false,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
-      home: const CanvasDrawingPage(),
+      home: const AboutScreen(),
     );
   }
 }
