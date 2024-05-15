@@ -1,4 +1,4 @@
-import 'dart:developer';
+// import 'dart:developer';
 import 'dart:io';
 import 'dart:typed_data';
 
@@ -42,11 +42,11 @@ class _DrawingScreenState extends State<DrawingScreen> {
       numThreads: 1,
       isAsset: true,
       useGpuDelegate: false,
-    ).then((value) => log(value!)); // todo: remove this debug
+    ); // .then((value) => log(value!)); // todo: remove this debug
 
     _signatureController.onDrawEnd = () {
       recognizeCanvasImage();
-      log("merecognize gambar"); // todo: remove this debug
+      // log("merecognize gambar"); // todo: remove this debug
     };
   }
 
